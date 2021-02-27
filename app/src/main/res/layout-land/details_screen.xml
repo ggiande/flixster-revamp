@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/cardview_dark_background">
+
+    <fragment
+        android:name="com.google.android.youtube.player.YouTubePlayerFragment"
+        android:id="@+id/video_item"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+/>
+
+    <TextView
+        android:id="@+id/movie_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toEndOf="@+id/video_item"
+        android:gravity="center"
+        android:textColor="#ACAAAA"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        tools:text="Chungus 840 Noscope Challenge" />
+
+    <TextView
+        android:id="@+id/movie_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ratings_bar"
+        android:layout_toEndOf="@+id/video_item"
+        android:layout_margin="10dp"
+        android:textColor="#ACAAAA"
+        tools:text="REEEEEEEEEEEEEEEEEEEEEEEEEEEEE EEEEEEEE" />
+
+    <TextView
+        android:id="@+id/detail_release_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/movie_name"
+
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toEndOf="@+id/video_item"
+        android:foregroundGravity="center"
+        android:textColor="#ACAAAA"
+        android:textSize="18sp"
+        tools:text="2-26-2020" />
+
+    <RatingBar
+        android:id="@+id/ratings_bar"
+        style="@android:style/Widget.DeviceDefault.Light.RatingBar.Indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detail_release_date"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toEndOf="@+id/video_item"
+        android:foregroundGravity="center|center_horizontal"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:padding="0dp"
+        android:progressTint="@color/red"
+        android:secondaryProgressTint="@color/red" />
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:text="BACK"
+        android:textColor="#BABABA" />
+
+</RelativeLayout>

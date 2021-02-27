@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/cardview_dark_background"
+    android:theme="@style/Theme.AppCompat.NoActionBar">
+
+    <fragment
+        android:name="com.google.android.youtube.player.YouTubePlayerFragment"
+        android:id="@+id/video_item"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/movie_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/video_item"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textColor="#ACAAAA"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        tools:text="Chungus 840 Noscope Challenge" />
+
+    <TextView
+        android:id="@+id/movie_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ratings_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="8dp"
+        android:textColor="#ACAAAA"
+        tools:text="REEEEEEEEEEEEEEEEEEEEEEEEEEEEE EEEEEEEE" />
+
+    <TextView
+        android:id="@+id/detail_release_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/movie_name"
+        android:gravity="center"
+        android:textColor="#ACAAAA"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="14dp"
+        tools:text="12-26-2020" />
+
+    <RatingBar
+        android:id="@+id/ratings_bar"
+        style="@android:style/Widget.DeviceDefault.Light.RatingBar.Indicator"
+        android:layout_width="191dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/movie_name"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="1dp"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:padding="5dp"
+        android:progressTint="@color/red"
+        android:secondaryProgressTint="@color/red" />
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:text="BACK"
+        android:textColor="#BABABA" />
+
+</RelativeLayout>
